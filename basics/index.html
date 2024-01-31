@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web App</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	
+	<link rel="stylesheet" href="src/css/styles.css" />
+	<link rel="stylesheet" href="src/css/add.form.css" />
+	
+</head>
+<body>
+	<h1>Galeria</h1>
+	<div add-form>
+		<div class="field t">
+			<label for="titulo">Título</label>
+			<input type="text" placeholder="Título de la imagen" id="titulo" />
+		</div>
+		<div class="field u">
+			<label for="imagen">Ubicación</label>
+			<input type="text" placeholder="Dirección URL de la imagen" id="imagen" />
+		</div>
+		<div class="field d">
+			<label for="descripcion">Descripción</label>
+			<textarea id="descripcion" placeholder="Danos mas información sobre esta imagen"></textarea>
+		</div>
+		<div class="field b">
+			<button>Agregar</button>
+		</div>
+
+	</div>
+
+	<div class="contenedor">
+		<div class="tarjetas">
+			<div class="imagen"></div>
+			<div class="informacion">
+				<h2 class="subtitulo">Venecia, Tamaulipas, México. Ahi vivia. XD</h2>
+				<p class="detalle">
+					Calles inundadas al estilo divisoria
+					Tampico/AltamiraCalles inundadas al 
+					estilo divisoria Tampico/Altamira
+					Calles inundadas al estilo divisoria
+				</p>
+				<div class="botones">
+					
+					<button class="like" onclick="alert('Haz hecho click')">
+						<i class="micon">thumb_up</i>
+					</button>
+
+					
+					<button class="compartir">
+						<i class="micon">share</i>
+					</button>
+
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script src="src/js/scripts.js"></script>
+</body>
+</html>
