@@ -67,9 +67,19 @@ button:hover {
 	grid-template-rows: 55% 45%;
 	height: 500px;
 	box-shadow: var(--default-box-shadow);
+	position: relative;
+}
+.contenedor > .tarjetas .acciones {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.contenedor > .tarjetas .acciones .micon {
+	text-shadow: 3px 3px 5px #FFF;
+	color: #000;
+	cursor: pointer;
 }
 .contenedor > .tarjetas > .imagen {
-	background-image: url('https://picsum.photos/1280/720');
 	background-position: center;
 	background-size: cover;
 

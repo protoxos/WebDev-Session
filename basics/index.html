@@ -12,6 +12,29 @@
 	
 </head>
 <body>
+
+	<template id="tarjeta">
+		<div class="tarjetas">
+			<div class="acciones">
+				<i class="micon" onclick="edit({{id}})">edit</i>
+				<i class="micon" onclick="remove({{id}})">delete</i>
+			</div>
+			<div class="imagen" style="background-image: url('{{imagen}}')"></div>
+			<div class="informacion">
+				<h2 class="subtitulo">{{titulo}}</h2>
+				<p class="detalle">{{descripcion}}</p>
+				<div class="botones">
+					<button class="like">
+						<i class="micon">thumb_up</i>
+					</button>
+					<button class="compartir">
+						<i class="micon">share</i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</template>
+
 	<h1>Galeria</h1>
 	<div add-form>
 		<div class="field t">
@@ -32,35 +55,7 @@
 
 	</div>
 
-	<div class="contenedor">
-		<div class="tarjetas">
-			<div class="imagen"></div>
-			<div class="informacion">
-				<h2 class="subtitulo">Venecia, Tamaulipas, México. Ahi vivia. XD</h2>
-				<p class="detalle">
-					Calles inundadas al estilo divisoria
-					Tampico/AltamiraCalles inundadas al 
-					estilo divisoria Tampico/Altamira
-					Calles inundadas al estilo divisoria
-				</p>
-				<div class="botones">
-					
-					<button class="like" onclick="alert('Haz hecho click')">
-						<i class="micon">thumb_up</i>
-					</button>
-
-					
-					<button class="compartir">
-						<i class="micon">share</i>
-					</button>
-
-					
-				</div>
-			</div>
-		</div>
-
-	</div>
-
+	<div class="contenedor"></div>
 
 	<script src="src/js/scripts.js"></script>
 </body>
